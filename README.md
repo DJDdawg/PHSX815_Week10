@@ -22,4 +22,18 @@ $\beta = \frac{1}{N_{meas}} \sum_{i=1}^{N_{meas}} x_{i}$,
 
 showing that $\beta$ is the mean of the distribution.
 
+**Code**
+
+A Function for an exponential distribution is defined in **Random.py**, and uses the standard numpy.random.exponential(loc=Beta, scale=1) function.
+
+Data can be pulled from an exponential distribution using the **Exponential.py** file.
+
+>$python3 Exponential.py -Nmeas 15 -Nexp 50 -Beta 0.5 -output Data.txt
+
+Where '-Nmeas' is the number of measurements/experiment, '-Nexp' is the number of experiments, '-Beta' defines the shape parameter, and **Data.txt** is the output file.
+
+This Data file can then be imported into ExponentialPlot.py and be plotted to visualize the data compared to the exponential distribution, which is shown in **ExponentialPlot.png** below.
+
+>$python3 ExponentialPlot.py -Beta 0.5 Data.txt
+
 ![ExponentialPlot.png](https://github.com/DJDdawg/PHSX815_Week10/blob/main/ExponentialPlot.png)

@@ -32,8 +32,18 @@ Data can be pulled from an exponential distribution using the **Exponential.py**
 
 Where '-Nmeas' is the number of measurements/experiment, '-Nexp' is the number of experiments, '-Beta' defines the shape parameter, and **Data.txt** is the output file.
 
-This Data file can then be imported into ExponentialPlot.py and be plotted to visualize the data compared to the exponential distribution, which is shown in **ExponentialPlot.png** below.
+This Data file can then be imported into **ExponentialPlot.py** and be plotted to visualize the data compared to the exponential distribution, which is shown in **ExponentialPlot.png** below.
 
 >$python3 ExponentialPlot.py -Beta 0.5 Data.txt
 
 ![ExponentialPlot.png](https://github.com/DJDdawg/PHSX815_Week10/blob/main/ExponentialPlot.png)
+
+Finally, **ExponentialAnalysis.py** numerically estimates the shape parameter of of the exponential distribution by maximizing the log likelihood using standard Scipy minimization packages. **NOT YET WORKING**
+
+It first does this for a single experiment with Nmeas measurements, additionally calculating the 1 sigma error bars for our numerical estimate and then graphs this in **xx.png** compared to the analytical solution. 
+
+![]()
+
+It then estimates the shape parameter for all experiments and graphs the distribution of the parameter, which follow a Gaussian Distribution as the Number of Measurements/Experiment begins to increase, demonstrating the Central Limit Theorem.
+
+![]()

@@ -24,7 +24,7 @@ showing that $\beta$ is the mean of the distribution.
 
 **Code**
 
-A Function for an exponential distribution is defined in **Random.py**, and uses the standard numpy.random.exponential(loc=Beta, scale=1) function.
+A Function for an exponential distribution is defined in **Random.py**, and uses the standard numpy.random.exponential(Scale=Beta, size=1) function.
 
 Data can be pulled from an exponential distribution using the **Exponential.py** file.
 
